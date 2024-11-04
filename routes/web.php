@@ -26,7 +26,7 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 Route::middleware("auth")->prefix("/admin")->name("admin.")->group(function () {
     Route::get("/tasks", [AdminTaskController::class, "index"])->name("tasks.index");
-    Route::get("/tasks/{id}", [AdminTaskController::class, "show"])->name("tasks.show");
     Route::get("/tasks/create", [AdminTaskController::class, "create"])->name("tasks.create");
     Route::post("/tasks", [AdminTaskController::class, "store"])->name("tasks.store");
+    Route::get("/tasks/{id}", [AdminTaskController::class, "show"])->name("tasks.show");
 });

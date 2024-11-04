@@ -54,9 +54,9 @@
                             </td>
                             <td>
                                 <a href="/admin/tasks/{{ $index + 1 }}" class="btn btn-sm btn-primary me-2">Show</a>
-                                {{-- <a href="{{ route("post.edit", $post->id) }}"  class="btn btn-sm btn-success me-2">Edit</a> --}}
+                                {{-- <a href="{{ route("task.edit", $task->id) }}"  class="btn btn-sm btn-success me-2">Edit</a> --}}
 
-                                {{-- <form class="d-inline env-destroyer" action="{{ route("admin.posts.delete", $post->id) }}" method="POST" custom-data-name="{{ $post->name }}" >
+                                {{-- <form class="d-inline env-destroyer" action="{{ route("admin.tasks.delete", $task->id) }}" method="POST" custom-data-name="{{ $task->name }}" >
                                     @method("DELETE")
                                     @csrf
 

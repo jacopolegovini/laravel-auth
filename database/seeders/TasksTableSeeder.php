@@ -19,7 +19,7 @@ class TasksTableSeeder extends Seeder
             [
                 'title' => 'Completare la relazione',
                 'author' => 'Jacopo',
-                'date' => Carbon::now()->format('Y-m-d H:i:s'),
+                'date' => Carbon::now()->format('d-m-Y'),
                 'priority' => 'Alta',
                 'description' => 'Scrivere un approfondimento sulla teoria dei grafi.'
             ],
