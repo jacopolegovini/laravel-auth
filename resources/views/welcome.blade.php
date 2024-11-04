@@ -35,6 +35,9 @@
     <h1 class="text-center">
         Welcome in your Task Manager
     </h1>
+    @if (Auth::check())
+        {{'test'}}
+    @endif
     @endsection
     </body>
 </html>

@@ -40,8 +40,10 @@
                             <td>
                                 {{ $task->date }}
                             </td>
+                            <td>
                                 {{ $task->priority }}
                             </td>
+                            <td>
                                 {{ $task->description }}
                             </td>
                             <td>
