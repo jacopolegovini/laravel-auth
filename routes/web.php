@@ -24,8 +24,8 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::middleware("auth")->prefix("/admin")->name("admin.")->group(function () {
-    Route::get("/posts", [AdminTaskController::class, "index"])->name("posts.index");
-    Route::get("/posts/{id}", [AdminTaskController::class, "show"])->name("posts.show");
-    Route::get("/posts/create", [AdminTaskController::class, "create"])->name("posts.create");
-    Route::post("/posts", [AdminTaskController::class, "store"])->name("posts.store");
+    Route::get("/tasks", [AdminTaskController::class, "index"])->name("tasks.index");
+    Route::get("/tasks/{id}", [AdminTaskController::class, "show"])->name("tasks.show");
+    Route::get("/tasks/create", [AdminTaskController::class, "create"])->name("tasks.create");
+    Route::post("/tasks", [AdminTaskController::class, "store"])->name("tasks.store");
 });
