@@ -17,6 +17,7 @@
                 <table class="table table-hover table-striped">
                     <thead>
                         <tr>
+                            <th scope="col">Done</th>
                             <th scope="col">#</th>
                             <th scope="col">Title</th>
                             <th scope="col">Author</th>
