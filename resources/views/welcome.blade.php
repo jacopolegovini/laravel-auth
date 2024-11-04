@@ -32,12 +32,14 @@
             @endif
         </div> --}}
     @section('content')
-    <h1 class="text-center">
-        Welcome in your Task Manager
-    </h1>
-    @if (Auth::check())
-        {{'test'}}
-    @endif
-    @endsection
+    <div class="container">
+        <h1 class="text-center">
+            Welcome in your Task Manager
+        </h1>
+        @if (Auth::check())
+            <a class="btn btn-primary" href="/admin/tasks">Task's List</a>
+        @endif
+        @endsection
+    </div>
     </body>
 </html>

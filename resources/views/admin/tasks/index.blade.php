@@ -29,6 +29,12 @@
                         @forelse ( $tasks as $index => $task )
                         <tr>
                             <td>
+                                <form action="" class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                                    <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="btncheck1">Done</label>
+                                </form>
+                            </td>
+                            <td>
                                 {{ $task->id }}
                             </td>
                             <td>
