@@ -53,7 +53,7 @@
                                 {{ $task->description }}
                             </td>
                             <td>
-                                <a href="{{ route("admin.tasks.show", $task) }}" class="btn btn-sm btn-primary me-2">Show</a>
+                                <a href="/admin/tasks/{{ $index + 1 }}" class="btn btn-sm btn-primary me-2">Show</a>
                                 {{-- <a href="{{ route("post.edit", $post->id) }}"  class="btn btn-sm btn-success me-2">Edit</a> --}}
 
                                 {{-- <form class="d-inline env-destroyer" action="{{ route("admin.posts.delete", $post->id) }}" method="POST" custom-data-name="{{ $post->name }}" >

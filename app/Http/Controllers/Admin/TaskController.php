@@ -38,7 +38,8 @@ class TaskController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $tasks = Task::findOrFail($id);
+        return view('admin.tasks.show', compact('tasks'));
     }
 
     /**
