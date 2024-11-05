@@ -13,6 +13,9 @@
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
 
         <!-- Styles -->
+
+        {{-- JS --}}
+        @vite("resources/js/welcome.js")
     </head>
     <body>
         {{-- Qui il codice per il log-in iniziale --}}
@@ -83,7 +86,7 @@
                                         @forelse ( $tasks as $index => $task )
                                         <tr>
                                             <td>
-                                                <form action="" class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                                                <form action="" class="btn-group done" role="group" aria-label="Basic checkbox toggle button group">
                                                     <input type="checkbox" class="btn-check" id="btncheck{{$task->id}}" autocomplete="off">
                                                     <label class="btn btn-outline-primary" for="btncheck{{$task->id}}">Done</label>
                                                 </form>
