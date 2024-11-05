@@ -49,7 +49,8 @@ class TaskController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $tasks = Task::findOrFail($id);
+        return view('admin.tasks.edit', compact('tasks'));
     }
 
     /**
@@ -57,7 +58,9 @@ class TaskController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $tasks = Task::findOrFail($id);
+        $tasks->update($request->all());
+        return redirect()->route('admin.tasks.index');
     }
 
     /**

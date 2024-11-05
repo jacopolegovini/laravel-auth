@@ -31,8 +31,8 @@
                         <tr>
                             <td>
                                 <form action="" class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
-                                    <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-                                    <label class="btn btn-outline-primary" for="btncheck1">Done</label>
+                                    <input type="checkbox" class="btn-check" id="btncheck{{$task->id}}" autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="btncheck{{$task->id}}">Done</label>
                                 </form>
                             </td>
                             <td>
@@ -55,7 +55,7 @@
                             </td>
                             <td>
                                 <a href="/admin/tasks/{{ $index + 1 }}" class="btn btn-sm btn-primary me-2">Show</a>
-                                {{-- <a href="{{ route("task.edit", $task->id) }}"  class="btn btn-sm btn-success me-2">Edit</a> --}}
+                                <a href="{{ route("admin.tasks.edit", $task->id) }}"  class="btn btn-sm btn-success me-2">Edit</a>
 
                                 {{-- <form class="d-inline env-destroyer" action="{{ route("admin.tasks.delete", $task->id) }}" method="POST" custom-data-name="{{ $task->name }}" >
                                     @method("DELETE")
