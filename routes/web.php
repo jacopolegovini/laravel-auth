@@ -31,4 +31,5 @@ Route::middleware("auth")->prefix("/admin")->name("admin.")->group(function () {
     Route::get("/tasks/{id}", [AdminTaskController::class, "show"])->name("tasks.show");
     Route::get("/tasks/{id}/edit", [AdminTaskController::class, "edit"])->name("tasks.edit");
     Route::put("/tasks/{id}", [AdminTaskController::class, "update"])->name("tasks.update");
+    Route::delete("/tasks/{id}", [AdminTaskController::class, "destroy"])->name("tasks.delete");
 });
