@@ -2,4 +2,9 @@ console.log('test')
 
 let doneButton = document.querySelectorAll('.done')
 
-console.log(doneButton[1])
+for (let i = 0; i < doneButton.length; i++) {
+    doneButton[i].addEventListener('click', function (event) {
+        event.preventDefault();
+        console.log(doneButton[i])
+    })
+}
